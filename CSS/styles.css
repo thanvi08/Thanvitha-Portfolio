@@ -1,0 +1,157 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header-section {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-nav li {
+    margin-left: 20px;
+}
+
+.header-nav li:first-child {
+    margin-left: 0;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Background Image Section */
+.background-image-section {
+    background-image: url('images/backgroundimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    color: #fff;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* White background with transparency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 20px;
+}
+
+.image-overlay img {
+    width: 240px;
+    border-radius: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', Arial, sans-serif;
+}
+.image-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.image-overlay p {
+    font-size: 20px;
+}
+/* Social Media Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons i {
+    font-size: 36px;
+}
+
+.social-icons span {
+    margin-top: 5px;
+    font-size: 16px;
+}
+/* About Section */
+.about-section {
+    background-color: off-white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Centered Paragraph */
+.textbox {
+    padding: 20px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.textbox p {
+    text-align: center;
+}
+
+/* Line below h2 heading */
+.about-content h2 {
+    position: relative;
+}
+
+.about-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust this value to control the distance of the line from the text */
+    left: 50%;
+    width: 900px; /* Adjust this value to control the length of the line */
+    border-bottom: 2px solid #000; /* Adjust the color and style of the line as needed */
+    transform: translateX(-50%);
+}
+
